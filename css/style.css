@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .debug{
+    border: 1px solid black;
+    min-height: 50px;
+} */
+
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.immagini>img {
+    width: 80%;
+    aspect-ratio: 2;
+}
+
+.immagini {
+    position: relative;
+    display: none;
+}
+
+.title {
+    position: absolute;
+    bottom: 25.3rem;
+    left: 8.1rem;
+    border-radius: 0 0 20px 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 40%;
+    font-size: 1vw;
+    text-shadow: 2px 2px 5px white;
+    text-align: left;
+}
+
+.thumbnail {
+    filter: brightness(60%);
+}
+
+.thumbnail>img{
+    width: 15.65rem;
+    aspect-ratio: 2;
+}
+
+.thumbnail.active {
+    filter: brightness(100%);
+    border: 2px solid white;
+}
+
+.fa-solid {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.active {
+    display: block;
+    animation-name: opacity;
+    animation-duration: 3s;
+}
+
+@keyframes opacity {
+    to {
+        opacity: 1
+    }
+
+    from {
+        opacity: 0.2
+    }
+}
