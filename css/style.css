@@ -9,13 +9,8 @@
     min-height: 50px;
 } */
 
-.container{
-    width: 100vw;
-    height: 100vh;
-}
-
 .immagini>img {
-    width: 80%;
+    width: 90%;
     aspect-ratio: 2;
 }
 
@@ -26,12 +21,12 @@
 
 .title {
     position: absolute;
-    bottom: 25.3rem;
-    left: 8.1rem;
+    bottom: 400px;
+    left: 70px;
     border-radius: 0 0 20px 0;
     background-color: rgba(0, 0, 0, 0.2);
-    width: 40%;
-    font-size: 1vw;
+    width: 650px;
+    font-size: 24px;
     text-shadow: 2px 2px 5px white;
     text-align: left;
 }

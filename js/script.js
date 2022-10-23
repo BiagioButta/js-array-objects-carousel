@@ -76,6 +76,7 @@ function prev(){
         thumbnailHtml[currentIndex].classList.add("active");
         immaginiHtml[currentIndex].classList.add("active");
     }
+    clearInterval(play)
 }
 
 nextButtonHtml.addEventListener("click", next);
@@ -96,6 +97,18 @@ function next() {
         immaginiHtml[currentIndex].classList.add("active");
         thumbnailHtml[currentIndex].classList.add("active");
     }
+    clearInterval(play)
 };
 
-const play = setInterval(next, 2000)
+let playHtml = document.getElementById('play');
+let stopHtml = document.getElementById('stop');
+
+function play (){
+    setInterval(next, 1000);
+}
+
+playHtml.addEventListener('click', play);
+    
+
+stopHtml.addEventListener('click', clearInterval(play));
+
